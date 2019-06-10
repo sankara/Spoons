@@ -998,16 +998,16 @@ on notification_Center(successCount, itemNum)
 	set Plural_Test to (successCount) as number
 
 	if Plural_Test is -1 then
-		display notification "No Items Selected In Outlook!" with title "Outlook to OmniFocus" subtitle "Veritrope.com"
+		display notification "No Items Selected In Outlook!" with title "Outlook to OmniFocus"
 
 	else if Plural_Test is 0 then
-		display notification "No Items Exported From Outlook!" with title "Outlook to OmniFocus" subtitle "Veritrope.com"
+		display notification "No Items Exported From Outlook!" with title "Outlook to OmniFocus"
 
 	else if Plural_Test is equal to 1 then
-		display notification "Successfully Exported " & itemNum & " Item to OmniFocus" with title "Outlook to OmniFocus" subtitle "Veritrope.com"
+		display notification "Successfully Exported " & itemNum & " Item to OmniFocus" with title "Outlook to OmniFocus"
 
 	else if Plural_Test is greater than 1 then
-		display notification "Successfully Exported " & itemNum & " Items to OmniFocus" with title "Outlook to OmniFocus" subtitle "Veritrope.com"
+		display notification "Successfully Exported " & itemNum & " Items to OmniFocus" with title "Outlook to OmniFocus"
 	end if
 
 	set itemNum to "0"
